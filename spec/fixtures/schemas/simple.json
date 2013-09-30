@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "description": "Generated from spec/fixtures/examples/simple.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "required": true
+        },
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "price": {
+            "type": "number",
+            "required": true
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "required": true
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+}
