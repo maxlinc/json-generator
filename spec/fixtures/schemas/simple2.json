@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
-    "description": "Generated from spec/fixtures/examples/simple.json",
+    "description": "Generated from spec/fixtures/examples/simple2.json",
     "type": "object",
     "properties": {
         "id": {
@@ -20,8 +20,17 @@
             "minItems": 1,
             "uniqueItems": true,
             "items": {
-                "type": "string",
-                "required": true
+                "type": "object",
+                "properties": {
+                    "home": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "color": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
             }
         }
     }
